@@ -1,4 +1,4 @@
-# ![CF](http://i.imgur.com/7v5ASc8.png) Poll Upvotes and Dowvotes 
+# ![CF](http://i.imgur.com/7v5ASc8.png) Poll Upvotes and Downvotes 
 
 Create a webpage that allows users to enter questions and upvote and downvote
 them. This assignment is all about practicing creating routes on controllers to 
