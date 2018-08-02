@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>homepage</title>
+</head>
+<body>
+<h1>Cyber-Bully</h1>
+<p>because that's what adding a downvote button always results in.</p>
+
+<form action="/submit/" method="POST">
+    <label>Question? <input type="text" name="question" /></label>
+    <input type="submit">
+</form>
+
+<table border="1">
+    <tr th:each="question : ${poll}">
+        <td th:text="${question.question}"></td>
+        <td th:text="${question.upvotes}"></td>
+        <td th:text="${question.downvotes}"></td>
+        <td>
+            <a th:href="'/crew/' + ${crew.id} + '/upvote'">
+                Upboat
+            </a>
+            <a th:href="'/crew/' + ${crew.id} + '/downvote'">
+                Cyberbully
+            </a>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
